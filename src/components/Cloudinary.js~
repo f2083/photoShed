@@ -1,0 +1,6 @@
+var React = require("react");
+var reactCloudinary = require("react-cloudinary");
+reactCloudinary.cloudinaryConfig({cloud_name: 'f2083'});
+var CloudinaryImage = reactCloudinary.CloudinaryImage
+const imagePublicId = '20160508_132500_yvicll';
+<CloudinaryImage publicId={imagePublicId} options={{ width: 300, height: 300 }} />

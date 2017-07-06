@@ -1,0 +1,13 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+import './index.css';
+import { cloudinaryConfig, CloudinaryImage, CloudinaryVideo } from 'react-cloudinary';
+cloudinaryConfig({cloud_name: 'f2083'});
+const imagePublicId = 'sample';
+
+
+ReactDOM.render(
+  <CloudinaryImage publicId={imagePublicId} options={{ width: 300, height: 300 }} />,
+  document.getElementById('root')
+);

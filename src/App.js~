@@ -24,7 +24,7 @@ class App extends Component {
   }
   render() {
 	var imgList = this.state.imgArr.map(function (item) {
-		return <Image public_id={item.public_id} format={item.format} css={{
+		return <Image publicId={item.public_id} format={item.format} css={{
         height:'300px',width:'auto'}}/>;
    }) 	
   	
